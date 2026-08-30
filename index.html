@@ -386,6 +386,364 @@
     }
 
   </style>
+
+<style id="fittrack-button-fix">
+#fittrack-screenshots-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+</style>
+
+
+<style id="mobile-responsive-final">
+/* ===== FINAL MOBILE LAYOUT ===== */
+@media (max-width: 860px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  header.nav {
+    width: 100%;
+  }
+
+  .nav-inner {
+    width: 100%;
+    min-height: 64px;
+    padding: 14px 22px;
+  }
+
+  .nav-name {
+    font-size: 18px;
+    line-height: 1.2;
+    max-width: calc(100% - 58px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-toggle {
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  .nav-links {
+    top: 64px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 101;
+  }
+
+  .nav-links a {
+    padding: 15px 22px;
+    font-size: 14px;
+  }
+
+  /* HERO: remove the excessive empty vertical space */
+  .hero {
+    padding: 54px 0 42px;
+    min-height: 0;
+    height: auto;
+  }
+
+  .hero-grid {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 18px;
+    font-size: 11px;
+    letter-spacing: .14em;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: none;
+    font-size: clamp(38px, 10.5vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -.02em;
+    margin-bottom: 20px;
+  }
+
+  .hero-copy p {
+    width: 100%;
+    max-width: 42ch;
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+
+  .hero-visual {
+    display: none !important;
+  }
+
+  .btn-row {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-row .btn {
+    min-height: 46px;
+    padding: 12px 18px;
+  }
+
+  .hero-rule {
+    margin-top: 46px;
+    padding-top: 22px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  section {
+    padding: 64px 0;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    display: block;
+    width: 100%;
+  }
+
+  .about-grid h2 {
+    font-size: clamp(31px, 8vw, 40px);
+    margin-bottom: 28px;
+  }
+
+  .about-copy {
+    width: 100%;
+  }
+
+  .about-copy p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .focus-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  /* SECTION HEADINGS */
+  .section-head {
+    margin-bottom: 32px;
+    padding-bottom: 18px;
+  }
+
+  .section-head h2 {
+    font-size: clamp(30px, 8vw, 40px);
+  }
+
+  .proj-sub {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-cat {
+    padding: 22px 20px;
+  }
+
+  /* PROJECTS */
+  .project,
+  .project.flip {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 48px 0;
+  }
+
+  .project:first-of-type {
+    padding-top: 0;
+  }
+
+  .project .project-info,
+  .project.flip .project-info {
+    order: 1;
+    width: 100%;
+  }
+
+  .project .project-media,
+  .project.flip .project-media {
+    order: 2;
+    width: 100%;
+  }
+
+  .project-info h3 {
+    font-size: clamp(28px, 8vw, 38px);
+    line-height: 1.12;
+  }
+
+  .project-info p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .tech-tags {
+    gap: 7px;
+    margin-bottom: 22px;
+  }
+
+  .tech-tag {
+    font-size: 11px;
+    padding: 5px 9px;
+  }
+
+  .project-btns {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-btns .btn,
+  .project-btns button {
+    min-height: 44px;
+  }
+
+  .project-media {
+    aspect-ratio: 4 / 3;
+    min-height: 0;
+  }
+
+  /* Keep FitTrack+ screenshot button white with purple border */
+  #fittrack-screenshots-btn {
+    background: #fff !important;
+    color: var(--purple-deep) !important;
+    border: 1px solid var(--purple-deep) !important;
+    box-shadow: none !important;
+  }
+
+  #fittrack-screenshots-btn:hover,
+  #fittrack-screenshots-btn:active {
+    background: var(--purple-deep) !important;
+    color: #fff !important;
+  }
+
+  /* CONTACT */
+  .contact-section {
+    padding: 44px 22px;
+    border-radius: 12px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .contact-section h2 {
+    max-width: 100%;
+    font-size: clamp(31px, 8vw, 42px);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 44px 0 30px;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .wrap {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .nav-inner {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero {
+    padding-top: 46px;
+    padding-bottom: 34px;
+  }
+
+  .hero h1 {
+    font-size: clamp(35px, 10.5vw, 46px);
+  }
+
+  .hero-copy p {
+    font-size: 14.5px;
+  }
+
+  .btn-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-rule {
+    margin-top: 40px;
+  }
+
+  section {
+    padding: 56px 0;
+  }
+
+  .project {
+    padding: 42px 0;
+  }
+
+  .project-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-btns .btn,
+  .project-btns button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-media {
+    aspect-ratio: 4 / 3;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -520,7 +878,7 @@
       <div class="project-media">
         <div class="media-frame-bar"><span></span><span></span><span></span></div>
         <div class="media-placeholder">
-          <img src="Aurevia.png" alt="Aurevia e-commerce homepage">
+         <img src="Aurevia.png" alt="Aurevia e-commerce homepage">
         </div>
       </div>
       <div class="project-info">
@@ -533,7 +891,7 @@
         </div>
         <div class="project-btns">
           <a href="https://aurevia-ecommerce-nine.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
-          <a href="https://github.com/Rehana303/aurevia-ecommerce" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Code</a>
+          <a href="https://github.com/Rehana Fathima Shahul303/aurevia-ecommerce" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Code</a>
         </div>
       </div>
     </div>
@@ -543,8 +901,7 @@
       <div class="project-media">
         <div class="media-frame-bar"><span></span><span></span><span></span></div>
         <div class="media-placeholder">
-          <img src="Personal Expense Tracker.png" alt="Personal Expense Tracker">
-        </div>
+          <img src="Expense-Tracker.png">
       </div>
       <div class="project-info">
         <span class="project-index">Project 02</span>
@@ -556,7 +913,7 @@
         </div>
         <div class="project-btns">
           <a href="https://personal-expense-tracking-beta.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
-          <a href="https://github.com/Rehana303/personal-expense-tracking" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Code</a>
+          <a href="https://github.com/Rehana Fathima Shahul303/personal-expense-tracking" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Code</a>
         </div>
       </div>
     </div>
@@ -566,7 +923,7 @@
       <div class="project-media">
         <div class="media-frame-bar"><span></span><span></span><span></span></div>
         <div class="media-placeholder">
-         <img src="Task List Management.png" alt="Task List Management">
+        <img src="Task List Management.png">
         </div>
       </div>
       <div class="project-info">
@@ -579,7 +936,7 @@
         </div>
         <div class="project-btns">
           <a href="https://task-list-management-three.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
-          <a href="https://github.com/Rehana303/task-list-management" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Code</a>
+          <a href="https://github.com/Rehana Fathima Shahul303/task-list-management" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Code</a>
         </div>
       </div>
     </div>
@@ -607,8 +964,8 @@
           <span class="tech-tag">AlarmManager</span><span class="tech-tag">SharedPreferences</span>
         </div>
         <div class="project-btns"> 
-          <a href="https://github.com/Rehana303/FitTrack-plus" target="_blank" rel="noopener" class="btn btn-primary btn-sm">GitHub</a>
-          <button type="button" class="btn btn-ghost btn-sm" color="White"  id="fittrack-screenshots-btn">View Screenshots</button>
+          <a href="https://github.com/Rehana Fathima Shahul303/FitTrack-plus" target="_blank" rel="noopener" class="btn btn-primary btn-sm">GitHub</a>
+          <button type="button" class="btn btn-outline" id="fittrack-screenshots-btn">View Screenshots</button>
         </div>
       </div>
     </div>
@@ -627,7 +984,7 @@
             <!-- TODO: replace placeholders with real contact details -->
             <a href="mailto:rehana.fathima@email.com">rehana.fathima@email.com</a>
             <a href="#" target="_blank" rel="noopener">linkedin.com/in/rehana-fathima</a>
-            <a href="https://github.com/Rehana303" target="_blank" rel="noopener">github.com/Rehana303</a>
+            <a href="https://github.com/Rehana Fathima Shahul303" target="_blank" rel="noopener">github.com/Rehana Fathima Shahul303</a>
           </div>
         </div>
         <form class="contact-form" id="contactForm" novalidate>
@@ -660,7 +1017,7 @@
         <div class="footer-role">Aspiring Full-Stack Developer · Creative Designer</div>
       </div>
       <div class="footer-links">
-        <a href="https://github.com/Rehana303" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Rehana Fathima Shahul303" target="_blank" rel="noopener">GitHub</a>
         <a href="#" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:rehana.fathima@email.com">Email</a>
       </div>
@@ -757,61 +1114,61 @@
       <div class="fittrack-gallery">
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/Welcome%20Screen.png" alt="FitTrack+ Welcome Screen" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/Welcome%20Screen.png" alt="FitTrack+ Welcome Screen" loading="lazy">
           </div>
           <span>Welcome Screen</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/Signup%20Screen.png" alt="FitTrack+ Sign Up Screen" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/Signup%20Screen.png" alt="FitTrack+ Sign Up Screen" loading="lazy">
           </div>
           <span>Sign Up Screen</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/Login%20Screen.png" alt="FitTrack+ Login Screen" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/Login%20Screen.png" alt="FitTrack+ Login Screen" loading="lazy">
           </div>
           <span>Login Screen</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/Signup%20Dashboard.png" alt="FitTrack+ Sign Up Dashboard" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/Signup%20Dashboard.png" alt="FitTrack+ Sign Up Dashboard" loading="lazy">
           </div>
           <span>Sign Up Dashboard</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/LogIn%20Dashboard.png" alt="FitTrack+ Login Dashboard" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/LogIn%20Dashboard.png" alt="FitTrack+ Login Dashboard" loading="lazy">
           </div>
           <span>Login Dashboard</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/BMI.png" alt="FitTrack+ BMI Calculator" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/BMI.png" alt="FitTrack+ BMI Calculator" loading="lazy">
           </div>
           <span>BMI Calculator</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/Water%20Tracking.png" alt="FitTrack+ Water Tracking" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/Water%20Tracking.png" alt="FitTrack+ Water Tracking" loading="lazy">
           </div>
           <span>Water Tracking</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/Workout%20Screen.png" alt="FitTrack+ Workout" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/Workout%20Screen.png" alt="FitTrack+ Workout" loading="lazy">
           </div>
           <span>Workout</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/Timer.png" alt="FitTrack+ Timer & Mood Tracking" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/Timer.png" alt="FitTrack+ Timer & Mood Tracking" loading="lazy">
           </div>
           <span>Timer & Mood Tracking</span>
         </div>
         <div class="fittrack-gallery-item">
           <div class="fittrack-phone-frame">
-            <img src="https://raw.githubusercontent.com/Rehana303/FitTrack-plus/main/screenshots/Subscription.png" alt="FitTrack+ Subscription" loading="lazy">
+            <img src="https://raw.githubusercontent.com/Rehana Fathima Shahul303/FitTrack-plus/main/screenshots/Subscription.png" alt="FitTrack+ Subscription" loading="lazy">
           </div>
           <span>Subscription</span>
         </div>
@@ -963,6 +1320,291 @@
       });
     })();
   </script>
+
+
+<style id="mobile-responsive-fixes">
+  /* ===== Mobile responsive improvements ===== */
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  @media (max-width: 860px) {
+    .nav-inner {
+      padding: 14px 22px;
+      min-height: 64px;
+    }
+
+    .nav-name {
+      font-size: 17px;
+      max-width: 72%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav-links {
+      top: 64px;
+      width: 100%;
+    }
+
+    .nav-links a {
+      padding: 15px 22px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 58px 0 54px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 11vw, 50px);
+      max-width: 100%;
+      line-height: 1.08;
+    }
+
+    .hero-copy p {
+      font-size: 15px;
+      max-width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .btn-row,
+    .project-btns {
+      width: 100%;
+      gap: 10px;
+    }
+
+    .btn-row .btn,
+    .project-btns .btn,
+    .project-btns button {
+      min-height: 46px;
+    }
+
+    .hero-rule {
+      margin-top: 48px;
+      padding-top: 22px;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-head {
+      margin-bottom: 34px;
+    }
+
+    .about-grid {
+      gap: 28px;
+    }
+
+    .about-copy p {
+      font-size: 15px;
+    }
+
+    .focus-list {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .skill-cat {
+      padding: 22px 20px;
+    }
+
+    .project,
+    .project.flip {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 48px 0;
+    }
+
+    .project:first-of-type {
+      padding-top: 0;
+    }
+
+    .project-info h3 {
+      font-size: clamp(27px, 8vw, 36px);
+      line-height: 1.12;
+    }
+
+    .project-info p {
+      font-size: 15px;
+      max-width: 100%;
+    }
+
+    .tech-tags {
+      margin-bottom: 22px;
+    }
+
+    .project-media {
+      width: 100%;
+      aspect-ratio: 16 / 11;
+    }
+
+    .device-media {
+      height: 340px;
+      width: 100%;
+    }
+
+    .device-frame {
+      width: min(172px, 48vw);
+    }
+
+    .device-back {
+      right: calc(50% - 150px);
+    }
+
+    .device-front {
+      left: calc(50% - 150px);
+    }
+
+    .device-badge {
+      width: 48px;
+      height: 48px;
+      left: calc(50% - 6px);
+    }
+
+    .split-two {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .contact-section {
+      padding: 46px 22px;
+      border-radius: 12px;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 34px;
+    }
+
+    .contact-section h2 {
+      max-width: 100%;
+    }
+
+    .footer-inner {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .footer-links {
+      flex-wrap: wrap;
+      gap: 16px 22px;
+    }
+
+    /* FitTrack+ screenshots modal */
+    .fittrack-modal {
+      padding: 10px;
+    }
+
+    .fittrack-modal-content {
+      width: 100%;
+      max-height: 94vh;
+      padding: 22px 14px;
+      border-radius: 14px;
+    }
+
+    .fittrack-modal-header {
+      padding-right: 38px;
+      margin-bottom: 20px;
+    }
+
+    .fittrack-gallery {
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .fittrack-gallery-item {
+      height: min(430px, 110vw);
+    }
+
+    .fittrack-gallery-item span {
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    #fittrack-screenshots-btn {
+      background: #ffffff !important;
+      color: var(--purple-deep) !important;
+      border: 1px solid var(--purple-deep) !important;
+    }
+
+    #fittrack-screenshots-btn:hover {
+      background: var(--purple-deep) !important;
+      color: #ffffff !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .wrap {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    .nav-inner {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    .hero {
+      padding-top: 48px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 10.5vw, 44px);
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+    }
+
+    .btn-row .btn,
+    .project-btns .btn,
+    .project-btns button {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .project-media {
+      aspect-ratio: 4 / 3;
+    }
+
+    .device-media {
+      height: 315px;
+    }
+
+    .device-frame {
+      width: 150px;
+    }
+
+    .device-back {
+      right: calc(50% - 126px);
+    }
+
+    .device-front {
+      left: calc(50% - 126px);
+    }
+
+    .fittrack-gallery {
+      grid-template-columns: 1fr;
+    }
+
+    .fittrack-gallery-item {
+      height: 430px;
+    }
+  }
+</style>
 
 </body>
 </html>
