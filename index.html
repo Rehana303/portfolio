@@ -397,353 +397,6 @@
 }
 </style>
 
-
-<style id="mobile-responsive-final">
-/* ===== FINAL MOBILE LAYOUT ===== */
-@media (max-width: 860px) {
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  body {
-    min-width: 0;
-  }
-
-  .wrap {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
-  header.nav {
-    width: 100%;
-  }
-
-  .nav-inner {
-    width: 100%;
-    min-height: 64px;
-    padding: 14px 22px;
-  }
-
-  .nav-name {
-    font-size: 18px;
-    line-height: 1.2;
-    max-width: calc(100% - 58px);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .nav-toggle {
-    display: block;
-    flex: 0 0 auto;
-  }
-
-  .nav-links {
-    top: 64px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 101;
-  }
-
-  .nav-links a {
-    padding: 15px 22px;
-    font-size: 14px;
-  }
-
-  /* HERO: remove the excessive empty vertical space */
-  .hero {
-    padding: 54px 0 42px;
-    min-height: 0;
-    height: auto;
-  }
-
-  .hero-grid {
-    display: block;
-    width: 100%;
-  }
-
-  .hero-copy {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .hero-eyebrow {
-    margin-bottom: 18px;
-    font-size: 11px;
-    letter-spacing: .14em;
-  }
-
-  .hero h1 {
-    width: 100%;
-    max-width: none;
-    font-size: clamp(38px, 10.5vw, 52px);
-    line-height: 1.08;
-    letter-spacing: -.02em;
-    margin-bottom: 20px;
-  }
-
-  .hero-copy p {
-    width: 100%;
-    max-width: 42ch;
-    font-size: 15px;
-    line-height: 1.65;
-    margin-bottom: 24px;
-  }
-
-  .hero-visual {
-    display: none !important;
-  }
-
-  .btn-row {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .btn-row .btn {
-    min-height: 46px;
-    padding: 12px 18px;
-  }
-
-  .hero-rule {
-    margin-top: 46px;
-    padding-top: 22px;
-    width: 100%;
-    font-size: 12px;
-  }
-
-  section {
-    padding: 64px 0;
-  }
-
-  /* ABOUT */
-  .about-grid {
-    display: block;
-    width: 100%;
-  }
-
-  .about-grid h2 {
-    font-size: clamp(31px, 8vw, 40px);
-    margin-bottom: 28px;
-  }
-
-  .about-copy {
-    width: 100%;
-  }
-
-  .about-copy p {
-    font-size: 15px;
-    line-height: 1.7;
-  }
-
-  .focus-list {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 24px;
-  }
-
-  /* SECTION HEADINGS */
-  .section-head {
-    margin-bottom: 32px;
-    padding-bottom: 18px;
-  }
-
-  .section-head h2 {
-    font-size: clamp(30px, 8vw, 40px);
-  }
-
-  .proj-sub {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  /* SKILLS */
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skill-cat {
-    padding: 22px 20px;
-  }
-
-  /* PROJECTS */
-  .project,
-  .project.flip {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 48px 0;
-  }
-
-  .project:first-of-type {
-    padding-top: 0;
-  }
-
-  .project .project-info,
-  .project.flip .project-info {
-    order: 1;
-    width: 100%;
-  }
-
-  .project .project-media,
-  .project.flip .project-media {
-    order: 2;
-    width: 100%;
-  }
-
-  .project-info h3 {
-    font-size: clamp(28px, 8vw, 38px);
-    line-height: 1.12;
-  }
-
-  .project-info p {
-    max-width: 100%;
-    font-size: 15px;
-    line-height: 1.65;
-  }
-
-  .tech-tags {
-    gap: 7px;
-    margin-bottom: 22px;
-  }
-
-  .tech-tag {
-    font-size: 11px;
-    padding: 5px 9px;
-  }
-
-  .project-btns {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .project-btns .btn,
-  .project-btns button {
-    min-height: 44px;
-  }
-
-  .project-media {
-    aspect-ratio: 4 / 3;
-    min-height: 0;
-  }
-
-  /* Keep FitTrack+ screenshot button white with purple border */
-  #fittrack-screenshots-btn {
-    background: #fff !important;
-    color: var(--purple-deep) !important;
-    border: 1px solid var(--purple-deep) !important;
-    box-shadow: none !important;
-  }
-
-  #fittrack-screenshots-btn:hover,
-  #fittrack-screenshots-btn:active {
-    background: var(--purple-deep) !important;
-    color: #fff !important;
-  }
-
-  /* CONTACT */
-  .contact-section {
-    padding: 44px 22px;
-    border-radius: 12px;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
-
-  .contact-section h2 {
-    max-width: 100%;
-    font-size: clamp(31px, 8vw, 42px);
-  }
-
-  /* FOOTER */
-  footer {
-    padding: 44px 0 30px;
-  }
-
-  .footer-inner {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .footer-links {
-    flex-wrap: wrap;
-    gap: 14px 20px;
-  }
-}
-
-@media (max-width: 520px) {
-  .wrap {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  .nav-inner {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  .hero {
-    padding-top: 46px;
-    padding-bottom: 34px;
-  }
-
-  .hero h1 {
-    font-size: clamp(35px, 10.5vw, 46px);
-  }
-
-  .hero-copy p {
-    font-size: 14.5px;
-  }
-
-  .btn-row {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .btn-row .btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .hero-rule {
-    margin-top: 40px;
-  }
-
-  section {
-    padding: 56px 0;
-  }
-
-  .project {
-    padding: 42px 0;
-  }
-
-  .project-btns {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .project-btns .btn,
-  .project-btns button {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .project-media {
-    aspect-ratio: 4 / 3;
-  }
-}
-</style>
-
 </head>
 <body>
 
@@ -758,6 +411,8 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <!-- TODO: replace href with the real resume file URL when available -->
+    <a href="#" class="nav-cta">Resume</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -878,7 +533,9 @@
       <div class="project-media">
         <div class="media-frame-bar"><span></span><span></span><span></span></div>
         <div class="media-placeholder">
-         <img src="Aurevia.png" alt="Aurevia e-commerce homepage">
+          <!-- TODO: replace with real screenshot <img src="aurevia.jpg" alt="Aurevia e-commerce homepage"> -->
+          <div class="ph-name">Aurevia</div>
+          <div class="ph-note">Screenshot coming soon</div>
         </div>
       </div>
       <div class="project-info">
@@ -901,7 +558,9 @@
       <div class="project-media">
         <div class="media-frame-bar"><span></span><span></span><span></span></div>
         <div class="media-placeholder">
-          <img src="Expense-Tracker.png">
+          <div class="ph-name">Expense Tracker</div>
+          <div class="ph-note">Screenshot coming soon</div>
+        </div>
       </div>
       <div class="project-info">
         <span class="project-index">Project 02</span>
@@ -923,7 +582,8 @@
       <div class="project-media">
         <div class="media-frame-bar"><span></span><span></span><span></span></div>
         <div class="media-placeholder">
-        <img src="Task List Management.png">
+          <div class="ph-name">Task List</div>
+          <div class="ph-note">Screenshot coming soon</div>
         </div>
       </div>
       <div class="project-info">
